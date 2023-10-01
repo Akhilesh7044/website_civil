@@ -10,28 +10,37 @@
     }
 
     .login-form {
-      width: 300px;
+      width: 460px;
       margin: 0 auto;
       padding: 20px;
       border: 1px solid #ccc;
     }
 
+    .login-form h1{
+        text-align: center;
+        color: ;
+      }
+
     .login-form input {
-      width: 100%;
+      width: 96%;
       margin-bottom: 10px;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
 
-    .login-form button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+    
+.login-form button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
   </style>
 </head>
 <body>
@@ -42,12 +51,11 @@
     <button type="button" onclick="checkPassword()">Submit</button>
   </div>
   
-<h1 class="test"> ok</h1>
   <script>
     function checkPassword() {
       var password = document.getElementById("password").value;
 
-      if (password === "123456") {
+      if (password === "321") {
         window.location.href = "website.html";
       } else {
         alert("Incorrect password.");
