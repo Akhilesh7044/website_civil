@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Protected Website</title>
+  
+  <style>
+    body {
+      background-color: #F1F1F1;
+      font-family: sans-serif;
+    }
+
+    .login-form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .login-form input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <h1>Password Protected Website</h1>
+
+    <input type="password" id="password" placeholder="Enter password">
+    <button type="button" onclick="checkPassword()">Submit</button>
+  </div>
+  
+<h1 class="test"> ok</h1>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+
+      if (password === "123456") {
+        window.location.href = "website.html";
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.sachine-video {
+    display: flex;
+    justify-content: center;
+  }
+
+.test{
+    background-color: aquamarine;
+    color: red;
+}
